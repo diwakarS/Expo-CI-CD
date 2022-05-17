@@ -1,0 +1,19 @@
+name: Frontend Continuous Integration
+
+on:
+  pull_request:
+    branches: [ develop, master ]
+
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.18.1
+      - name: Install Dependecies
+        run: npm ci
+      - name: Linting
+        run: npm lint

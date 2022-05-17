@@ -3,6 +3,7 @@
     "name": "Expo-CI-CD",
     "slug": "Expo-CI-CD",
     "version": "1.0.0",
+    "runtimeVersion": "1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
